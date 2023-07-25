@@ -58,7 +58,7 @@ const Post: React.FC<PostProps> = (props) => {
         {
           !props.published && userHasValidSession && postBelongsToUser && (
             <button onClick={() => publishPost(props.id)}>Publish</button>
-          );
+          )
         }
         {
           userHasValidSession && postBelongsToUser && (
